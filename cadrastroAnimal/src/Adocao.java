@@ -1,7 +1,7 @@
 public class Adocao {
     private String nome;
     private int idade;
-    private String tipo;
+    private Enum Tipo;
     private String raca;
     private String telefone;
     private String endereco;
@@ -9,10 +9,10 @@ public class Adocao {
     public Adocao() {
     }
 
-    public Adocao(String nome, int idade, String tipo, String raca, String telefone, String endereco) {
+    public Adocao(String nome, int idade, Enum tipo, String raca, String telefone, String endereco) {
         this.nome = nome;
         this.idade = idade;
-        this.tipo = tipo;
+        Tipo = tipo;
         this.raca = raca;
         this.telefone = telefone;
         this.endereco = endereco;
@@ -34,12 +34,12 @@ public class Adocao {
         this.idade = idade;
     }
 
-    public String getTipo() {
-        return tipo;
+    public Enum getTipo() {
+        return Tipo;
     }
 
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
+    public void setTipo(Enum tipo) {
+        Tipo = tipo;
     }
 
     public String getRaca() {
